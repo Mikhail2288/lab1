@@ -77,9 +77,12 @@ public class main {
         String result9 = m.age(x4);
         out.println(result9);
 
-        //2.10, почему то проскакивает это задание, если его поставить первым, то оно работает
+        //2.10
         out.println("2.10"+"\n"+"Введите день недели: ");
         String str = in.nextLine();
+        while (str.isEmpty()) {
+            str = in.nextLine();
+        }
         m.printDays(str);
 
         //3.2
